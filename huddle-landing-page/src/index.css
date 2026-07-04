@@ -1,0 +1,43 @@
+:root {
+ --Purple: hsl(257, 40%, 49%);
+ --Magenta: hsl(300, 69%, 71%);
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@700&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background:var(--Purple);
+   background-image: url('./assets/bg-mobile.svg'); 
+  background-size: cover;
+  background-position: center;
+  height:56vh;
+  background-repeat: no-repeat;
+  font-family:'Poppins', sans-serif;
+}
+.section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align: center;
+  
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('./assets/bg-desktop.svg');
+    height: 100vh;
+  }
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ place-items: center;
+  text-align: center;
+  min-height: 70vh; 
+}
+}

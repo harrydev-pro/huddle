@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.social-icon {
+  color: white;       /* make them visible */
+  font-size: 20px;
+  margin: 0 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.social-icon:hover {
+  color: #FF52BF;     /* pink hover like Huddle */
+  border-color: #FF52BF;
+}
+@media (min-width: 768px) {
+  .footer {
+
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+}

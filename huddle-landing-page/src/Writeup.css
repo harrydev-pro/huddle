@@ -1,0 +1,58 @@
+:root{
+     --Magenta : hsl(300, 69%, 71%);
+}
+
+.writeup{
+    display: flex;
+    flex-direction: column;
+    padding:1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+.writeup h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.writeup p{
+    font-weight: 500;
+    font-size: 1.09rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+button{
+    width: 10rem;
+    height: 2.5rem;
+    color:black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button:hover{
+    background:var(--Magenta);
+}   
+
+@media (min-width: 768px) {
+    .writeup{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .writeup h3{
+        font-size: 2rem;
+        text-align: start;
+    }
+    .writeup p{
+        font-weight: 500;
+        
+        line-height: 1.5rem;
+        text-align: start;
+    }
+    
+}
